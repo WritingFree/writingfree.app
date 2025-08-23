@@ -171,6 +171,12 @@ h1 {
   height: auto;
 }
 
+.apple-banner .banner-image {
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+
 .icloud-banner .banner-image {
   width: 120px;
   height: auto;
@@ -212,11 +218,6 @@ body.dark-mode .apple-banner .banner-description {
   color: #a1a1a6;
 }
 
-body.dark-mode .intelligence-banner {
-  background: linear-gradient(135deg, #007aff 0%, #5856d6 100%);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
 body.dark-mode .icloud-banner {
   background: linear-gradient(135deg, #2d2d30 0%, #1d1d1f 100%);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -230,19 +231,16 @@ body.dark-mode .icloud-banner .banner-description {
   color: #a1a1a6;
 }
 
+body.dark-mode .intelligence-banner {
+  background: linear-gradient(135deg, #007aff 0%, #5856d6 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 body.dark-mode .intelligence-banner .banner-title {
   color: #ffffff;
 }
 
 body.dark-mode .intelligence-banner .banner-description {
-  color: rgba(255, 255, 255, 0.9);
-}
-
-body.dark-mode .icloud-banner .banner-title {
-  color: #ffffff;
-}
-
-body.dark-mode .icloud-banner .banner-description {
   color: rgba(255, 255, 255, 0.9);
 }
 

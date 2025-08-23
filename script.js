@@ -94,7 +94,22 @@ function cycleAlternatives(i) {
     setTimeout(() => {
       cycleAlternatives(i + 1);
     }, 1000);
+  } else {
+    // All alternatives have been shown, now trigger fade-in animations
+    setTimeout(() => {
+      triggerFadeInAnimations();
+    }, 700);
   }
 }
+
+// Function to trigger fade-in animations for content below typing
+function triggerFadeInAnimations() {
+  const contentElements = document.querySelectorAll('.content-below-typing');
+  contentElements.forEach(element => {
+    element.classList.add('fade-in');
+  });
+}
+
 typeStatic();
+
 

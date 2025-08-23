@@ -259,3 +259,36 @@ body.dark-mode .privacy-link:hover {
   color: #1a1a1a;
   background-color: #ccc;
 }
+
+/* Fade-in animations for content below typing */
+.content-below-typing {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.content-below-typing.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animation delays for different elements */
+.app-icon-container {
+  transition-delay: 0.2s;
+}
+
+.app-title-container {
+  transition-delay: 0.4s;
+}
+
+.app-store-container {
+  transition-delay: 0.6s;
+}
+
+.footer-container {
+  transition-delay: 0.8s;
+}
+
+.banners-container {
+  transition-delay: 1s;
+}

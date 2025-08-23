@@ -6,17 +6,56 @@
   <title>Privacy Policy - WritingFree</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+      min-height: 100vh;
+    }
+    
     .privacy-container {
       max-width: 800px;
       margin: 0 auto;
       padding: 2rem;
       line-height: 1.6;
+      min-height: 100vh;
+    }
+    
+    .privacy-container .app-icon-title {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 2rem;
+      text-align: center;
+      margin: 1rem 0;
+      color: #222;
+    }
+    
+    .privacy-container .app-icon {
+      width: 150px;
+      height: 150px;
+      background-image: url('app-icon.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 2rem auto 1rem auto;
+      display: block;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    
+    .privacy-container .app-icon:hover {
+      transform: scale(1.05);
+    }
+    
+    .privacy-container a {
+      text-decoration: none;
+      display: block;
     }
     
     .privacy-container h1 {
       text-align: center;
-      margin-bottom: 2rem;
+      margin: 2rem 0;
       color: #333;
+      font-size: 2rem;
     }
     
     .privacy-container h2 {
@@ -68,10 +107,29 @@
       font-style: italic;
       margin-top: 2rem;
     }
+    
+    @media (max-width: 768px) {
+      .privacy-container {
+        padding: 1rem;
+      }
+      
+      .privacy-container .app-icon-title {
+        font-size: 1.5rem;
+      }
+      
+      .privacy-container h1 {
+        font-size: 1.5rem;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="privacy-container">
+    <a href="index.html">
+      <div class="app-icon"></div>
+    </a>
+    <div class="app-icon-title">WritingFree</div>
+    
     <h1>Privacy Policy</h1>
     
     <p>At WritingFree we know you care about how your personal information is gathered, used and shared, so we take your privacy seriously. We never store your personal data so we never sell or rent it to anyone. Please read the following privacy policy.</p>
@@ -84,14 +142,6 @@
     
     <h2>WritingFree's Sharing of Personal Data</h2>
     <p>As a company strongly commited to privacy, we never collect any sort of personal data. However, and in order to download from Apple's App Store and to use the apps we develope in any Apple's devices, it is neccesary to have a valid Apple iCloud account.</p>
-    
-    <div class="back-link">
-      <a href="index.html">← Back to WritingFree</a>
-    </div>
-    
-    <div class="last-updated">
-      <p>Last updated: December 2024</p>
-    </div>
   </div>
 </body>
 </html>

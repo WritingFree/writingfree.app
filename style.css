@@ -89,6 +89,6 @@ h1 {
 }
 
 .privacy-link:hover {
-  color: #007aff;
-  background-color: rgba(0, 122, 255, 0.1);
+  color: white;
+  background-color: #666;
 }

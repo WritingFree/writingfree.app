@@ -3,7 +3,7 @@ const dynamicText = "Google Docs";
 const staticEl = document.getElementById('typing-static');
 const dynamicEl = document.getElementById('typing-dynamic');
 let idx = 0;
-const alternatives = ["Google Docs", "Ulysses", "Evernote", "Microsoft OneNote", "Bear"];
+const alternatives = ["Google Docs", "Ulysses", "Evernote", "OneNote", "Bear"];
 const maxLen = Math.max(dynamicText.length, ...alternatives.map(w => w.length));
 
 function typeStatic() {
@@ -31,7 +31,7 @@ function getColoredWordPartial(word, upto) {
   if (word === 'Google Docs') return googleColoredWord(partial);
   if (word === 'Ulysses') return ulyssesColoredWord(partial);
   if (word === 'Evernote') return evernoteColoredWord(partial);
-  if (word === 'Microsoft OneNote') return onenoteColoredWord(partial);
+  if (word === 'OneNote') return onenoteColoredWord(partial);
   return partial;
 }
 
@@ -81,7 +81,7 @@ function wrapWithCursor(word) {
     wordHtml = ulyssesColoredWord(word);
   } else if (word === 'Evernote') {
     wordHtml = evernoteColoredWord(word);
-  } else if (word === 'Microsoft OneNote') {
+  } else if (word === 'OneNote') {
     wordHtml = onenoteColoredWord(word);
   } else if (word === 'Bear') {
     wordHtml = bearColoredWord(word);
